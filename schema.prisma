@@ -15,9 +15,9 @@ generator client {
   provider = "prisma-client-py"
 
   // pass options to Prisma Client Python
-  // the `http` option being set to aiohttp means that the generated client
+  // the `interface` option being set to asyncio means that the generated client
   // will be asynchronous, this means you will need to `await` queries.
-  http = "aiohttp"
+  interface = "asyncio"
 
   // tells Prisma Client Python the depth that pseudo-recursive types should be generated to
   // use -1 for standard recursive types
